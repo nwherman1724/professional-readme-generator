@@ -2,6 +2,9 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+const mitLicense = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+
+
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -25,9 +28,25 @@ const questions = [
     message: 'Are there any usage requirements?',
   },
   {
-    type: 'input',
+    type: 'checkbox',
     name: 'license',
     message: 'What type of license does the project have?',
+    choices: ['MIT License', 'Apache License 2.0', 'BSD License', 'GNU GPLv3'],
+  },
+  {
+    type: 'input',
+    name: 'contribute',
+    message: 'How to contribute to this project:',
+  },
+  {
+    type: 'input',
+    name: 'tests',
+    message: 'What tests can be run?',
+  },
+  {
+    type: 'input',
+    name: 'credits',
+    message: 'Who else deserves credit for this work?',
   },
   {
     type: 'input',
@@ -39,18 +58,12 @@ const questions = [
     name: 'linkedin',
     message: 'Enter your LinkedIn URL.',
   },
-  {
-    type: 'input',
-    name: 'credits',
-    message: 'Who else deserves credit for this work?',
-  },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
-
-const generateReadMe = ({ title, description}) =>
+const generateReadMe = ({ title, description, installation, usage, license, contribute, tests}) =>
   `# ${title}
 
   ## Description
@@ -74,10 +87,12 @@ const generateReadMe = ({ title, description}) =>
   - [License](#license)
 
   ## Installation
+  ${installation}
 
   What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
   ## Usage
+  ${usage}
 
   Provide instructions and examples for use. Include screenshots as needed.
 
@@ -86,10 +101,15 @@ const generateReadMe = ({ title, description}) =>
       ![alt text](assets/images/screenshot.png)
       
   ## License
+  ${license}
 
   ## How to Contribute
+  ${contribute}
 
-  ## Tests`;
+  ## Tests
+  ${tests}
+  
+  ## Questions`;
   
 // TODO: Create a function to initialize app
 function init() {
