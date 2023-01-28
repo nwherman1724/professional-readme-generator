@@ -1,8 +1,8 @@
-# read me generator
+# k
 
   ## Description
 
-  good project
+  k
 
   Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
@@ -21,12 +21,12 @@
   - [License](#license)
 
   ## Installation
-  inquiree and fs
+  k
 
   What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
   ## Usage
-  idk
+  k
 
   Provide instructions and examples for use. Include screenshots as needed.
 
@@ -35,12 +35,12 @@
       ![alt text](assets/images/screenshot.png)
       
   ## License
-  MIT License
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
   ## How to Contribute
-  do good stuff
+  k
 
   ## Tests
-  all of the tests
+  k
   
   ## Questions

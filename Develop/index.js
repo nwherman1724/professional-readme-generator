@@ -4,6 +4,26 @@ const fs = require('fs');
 
 const mitLicense = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
 
+const apacheLicense = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+
+const bsdLicense = '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)';
+
+const gnuLicense = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
+
+function renderLicenseBadge(license) {
+  console.log(license);
+  if (license == 'MIT License') {
+    return mitLicense;
+  } else if (license == 'Apache License 2.0') {
+    return apacheLicense;
+  } else if (license == 'BSD License') {
+    return bsdLicense;
+  } else if (license == 'GNU GPLv3') {
+    return gnuLicense;
+  } else {
+    return '';
+  }
+}
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -28,7 +48,7 @@ const questions = [
     message: 'Are there any usage requirements?',
   },
   {
-    type: 'checkbox',
+    type: 'list',
     name: 'license',
     message: 'What type of license does the project have?',
     choices: ['MIT License', 'Apache License 2.0', 'BSD License', 'GNU GPLv3'],
@@ -101,7 +121,7 @@ const generateReadMe = ({ title, description, installation, usage, license, cont
       ![alt text](assets/images/screenshot.png)
       
   ## License
-  ${license}
+  ${renderLicenseBadge(license)}
 
   ## How to Contribute
   ${contribute}
