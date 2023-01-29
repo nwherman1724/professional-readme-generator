@@ -82,7 +82,7 @@ const generateReadMe = ({ title, description, installation, usage, license, cont
 
   ${renderLicenseBadge(license)}
 
-  ## Description
+  ## :blue_book: Description
 
   ${description}
 
