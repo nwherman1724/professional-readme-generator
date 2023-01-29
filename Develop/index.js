@@ -131,7 +131,7 @@ function init() {
       .then((answers) => {
         const readMeContent = generateReadMe(answers);
     
-        fs.writeFile('README.md', readMeContent, (err) =>
+        fs.writeFile('README2.md', readMeContent, (err) =>
           err ? console.log(err) : console.log('Successfully created README.md!')
         );
       });

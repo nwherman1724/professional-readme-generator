@@ -1,10 +1,10 @@
-# Professional README Generator
+# Professional ReadMe Generator
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## :blue_book: Description
 
-  This project will generate a README.md file. When index.js is run with node in the terminal, you will be prompted to answer a series of questions. The inputs from those questions and save into a README.md file.
+  The project generates a ReadMe.md file
 
   ## :bookmark_tabs: Table of Contents
 
@@ -17,24 +17,20 @@
   - [Questions](#questions)
 
   ## :hammer_and_wrench: Installation
-  Steps for Installation:
-  1. Open the terminal
-  2. In the folder you choose, run npm intall inquirer@8.2.4
+  Inquirer
 
   ## :zap: Usage
-  This project is used to generate a README.md file. An video show how to use this program is below.
-
-  
+  See video below
       
   ## :lock: License
   
-  This project is covered under the MIT License.
+  This project is cover under the MIT License.
 
   ## :handshake: Contribution
-  See contributor covenant: https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md
+  See contribution covenant:
 
   ## :chart_with_upwards_trend: Tests
-  There are no tests for this application.
+  There are no test for this application.
   
   ## :question: Questions
   Github Username: nwherman1724
