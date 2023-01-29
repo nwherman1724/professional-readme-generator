@@ -86,7 +86,7 @@ const generateReadMe = ({ title, description, installation, usage, license, cont
 
   ${description}
 
-  ## Table of Contents
+  ## :bookmark_tabs: Table of Contents
 
   - [Description](#description)
   - [Installation](#installation)
@@ -96,23 +96,23 @@ const generateReadMe = ({ title, description, installation, usage, license, cont
   - [Tests](#tests)
   - [Questions](#questions)
 
-  ## Installation
+  ## :hammer_and_wrench: Installation
   ${installation}
 
-  ## Usage
+  ## :zap: Usage
   ${usage}
       
-  ## License
+  ## :lock: License
   
   This project is cover under the ${license}.
 
-  ## Contribution
+  ## :handshake: Contribution
   ${contribute}
 
-  ## Tests
+  ## :chart_with_upwards_trend: Tests
   ${tests}
   
-  ## Questions
+  ## :question: Questions
   Github Username: ${github}
 
   Github Link: https://github.com/${github}
