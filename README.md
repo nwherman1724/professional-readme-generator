@@ -2,7 +2,7 @@
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  ## :blue_book: Description
+  ## :book: Description
 
   This project will generate a README.md file. When index.js is run with node in the terminal, you will be prompted to answer a series of questions. The inputs from those questions and save into a README.md file.
 
