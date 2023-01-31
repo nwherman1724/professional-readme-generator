@@ -1,7 +1,10 @@
 // TODO: Include packages needed for this application
+
+// importing inquirer and fs
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+// license badges
 const mitLicense = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
 
 const apacheLicense = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
@@ -10,6 +13,7 @@ const bsdLicense = '[![License](https://img.shields.io/badge/License-BSD_3--Clau
 
 const gnuLicense = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
 
+// function that take in a string and returns the license badge
 function renderLicenseBadge(license) {
   if (license == 'MIT License') {
     return mitLicense;
@@ -25,6 +29,8 @@ function renderLicenseBadge(license) {
 }
 
 // TODO: Create an array of questions for user input
+
+//Array of objects to be used in inquirer to get user input
 const questions = [
     {
     type: 'input',
@@ -75,8 +81,8 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
+// function that takes in parameters from the inquirer inputs to generate the content of the readme
 const generateReadMe = ({ title, description, installation, usage, license, contribute, tests, github, email}) =>
   `# ${title}
 
@@ -122,10 +128,11 @@ const generateReadMe = ({ title, description, installation, usage, license, cont
   Email me if you have additional questions.`;
   
 // TODO: Create a function to initialize app
+
+//function that runs code when called
 function init() {
 
-  
-
+  // asks questions in the terminal to receive input from the user
   inquirer
     .prompt(questions)
       .then((answers) => {
