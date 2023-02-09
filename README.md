@@ -22,7 +22,7 @@
   2. In the folder you choose, run npm intall inquirer@8.2.4
 
   ## :zap: Usage
-  This project is used to generate a README.md file. An video show how to use this program is below.
+  This project is used to generate a README.md file. A video show how to use this program is below.
 
   
 
